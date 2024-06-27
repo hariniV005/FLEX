@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: #d1f509;
+  padding: 5px;
+  flex: 30%;
+}
+
+.flex-item-mid {
+  background-color: rgb(6, 245, 189);
+  padding: 5px;
+  flex: 30%;
+}
+
+.flex-item-right {
+  background-color: rgb(243, 69, 6);
+  padding: 5px;
+  flex: 30%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Responsive Flexbox</h1>
+
+<div class="flex-container">
+  <div class="flex-item-left"><h2>Yellow</h2><p>Yellow, the lightest hue of the spectrum, signifies joy, happiness, betrayal, optimism, caution, idealism, imagination, hope, sunshine,hazard and friendship.</p></div>
+  <div class="flex-item-mid"><h2>Green</h2><p>the color green implies beginnings, new growth, vibrant health, and other ideas connected with life, rebirth, and renewal.20 Nov 2023
+  </p></div>
+  <div class="flex-item-right"><h2>Red</h2><p>While red is the color most associated with love, it also the color most frequently associated with hatred, anger, aggression and war. People who are angry are said to "see red."</div>
+  </p></div>
+
+</body>
+</html>
+
+
